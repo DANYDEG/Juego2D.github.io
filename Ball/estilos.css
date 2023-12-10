@@ -1,74 +1,91 @@
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000040572/82168470997fe0aaa812c3aca5c0d611f9ee24f821cd53867c90550f2ec4d11c');
-    background-size:cover;
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000040572/82168470997fe0aaa812c3aca5c0d611f9ee24f821cd53867c90550f2ec4d11c');
+    background-size: cover;
     background-repeat: no-repeat;
-}   
-
-.container{
-    width: 570px;
-    height: 600px; 
-    margin:2rem auto;
-    margin-top: 105px;
-    /* border: 1px solid black; */
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.contenedor{
+.container {
+    width: 570px;
+    height: 600px;
+    margin: 2rem auto;
+    margin-top: 105px;
+}
 
-    width:570px;
-    height:300px;
+.contenedor {
+    width: 570px;
+    height: 300px;
     position: relative;
-    /* border:1px solid rgb(0, 0, 0); */
-    margin:3rem auto;
-
-    background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4));
+    margin: 3rem auto;
+    background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4));
     backdrop-filter: blur(25px);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0 8px 5px 5px;
 }
-.bloque{
-    
-    height:20px;
-    width:100px;
-    background-color:rgb(255, 30, 30);
-    border-radius: 4px;
-    position:absolute;
 
+.bloque {
+    height: 20px;
+    width: 100px;
+    background-color: rgb(255, 30, 30);
+    border-radius: 4px;
+    position: absolute;
 }
-.usuario{
-    width:100px;
-    height:20px;
-    position:absolute;
-    background-color:rgb(83, 71, 255);
+
+.usuario {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(83, 71, 255);
     border-radius: 4px;
 }
-.bola{
-    height:20px;
-    width:20px;
-    position:absolute;
+
+.bola {
+    height: 20px;
+    width: 20px;
+    position: absolute;
     border-radius: 10px;
-    background-color:rgb(252, 0, 247);
+    background-color: rgb(252, 0, 247);
     border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
-button{
+button {
     margin-top: 120px;
     width: 570px;
-    height: 40p;
+    height: 70px;
     text-decoration: none;
-    background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4));
+    background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4));
     backdrop-filter: blur(25px);
     border-radius: 10px;
     border-style: none;
-
     transition: 0.3s;
 }
-a{
+
+a {
     text-decoration: none;
     color: wheat;
 }
 
-button:hover{
+button:hover {
     background-color: red;
     transition: 0.3s;
     box-shadow: rgba(0, 0, 0, 0.4) 0 8px 5px 5px;
+}
+
+/* Media query para pantallas más pequeñas */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .contenedor {
+        width: 90%;
+        height: 200px;
+    }
+
+    button {
+        margin-top: 50px;
+    }
 }
